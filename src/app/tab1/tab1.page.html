@@ -1,25 +1,32 @@
 <ion-header [translucent]="true">
-    <ion-toolbar>
+
+    <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>
+        <ion-title color="dark">
             Home
         </ion-title>
     </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-img src="../../assets/photos/panorama.jpg"></ion-img>
-    <h1>Bienvenue sur mon App</h1>
-    <div class="p">
-        <p>Première application avec Tabs et SideMenu qui gère une liste de photo</p>
-        <p>Mes photos en favoris</p>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,500&family=Hachi+Maru+Pop&display=swap');
+
+    </style>
+
+    <div class="test">
+        <h1>Bienvenue</h1>
+        <div class="p">
+            <p>Première application avec Tabs et SideMenu qui gère une liste de photo</p>
+            <p>Mes photos en favoris : </p>
+        </div>
+
+        <ion-list>
+            <app-list-item *ngFor="let img of photoList" [img]="img">
+            </app-list-item>
+        </ion-list>
     </div>
-    
-    <ion-list>
-        <app-list-item *ngFor="let img of photoList" [img]="img">
-        </app-list-item>
-    </ion-list>
-    
 </ion-content>

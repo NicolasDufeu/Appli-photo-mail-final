@@ -23,15 +23,11 @@ export class AppComponent implements OnInit, DoCheck {
       icon: 'images'
     },
     {
-      title: 'Contacts',
-      url: '/tabs/tab3',
-      icon: 'people'
-    },
-    {
       title: 'Mail',
-      url: '/tabs/tab4',
+      url: '/tabs/tab3',
       icon: 'mail'
     }
+
   ];
   constructor(
     private platform: Platform,

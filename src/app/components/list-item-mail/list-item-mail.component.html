@@ -1,0 +1,10 @@
+<ion-item *ngIf="img" [routerLink]="'/details-mail/' + img.id">
+    <ion-avatar slot="start">
+        <ion-img [src]="img.url"></ion-img>
+    </ion-avatar>
+    <ion-label>
+        <ion-text color="danger"><h2>{{ img.title }}</h2></ion-text>
+        <h3>{{ img.emetteur }}</h3>
+        <p>{{ img.mail }}</p>
+    </ion-label>
+</ion-item>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PhotosService } from '../services/photos.service';
-import { StorageService } from '../services/storage.service';
+import { PhotosService } from '../../services/photos.service';
+import { StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-details',

@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Détails</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+    <ion-card>
+        <img width="100%" [src]="emailDetails.url" />
+        <ion-card-header>
+            <ion-card-subtitle>{{ emailDetails.emetteur }}</ion-card-subtitle>
+            <ion-card-title>{{ emailDetails.title }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>{{ emailDetails.mail }}</ion-card-content>
+    </ion-card>
+
+    
+
+    <!-- <ion-button *ngIf="!addedToFav" expand="full" color="secondary" shape="round" (click)="addToFavorites()">Ajouter en Favoris <ion-icon name="heart"></ion-icon></ion-button>
+    
+    <ion-button *ngIf="addedToFav" expand="full" color="danger" shape="round" (click)="removeFromFav(photoDetails.id)">Retirer en Favoris <ion-icon name="close"></ion-icon></ion-button> -->
+    
+    <ion-button expand="full" routerLink="/tabs/tab3">Retour à la liste</ion-button> 
+
+</ion-content>

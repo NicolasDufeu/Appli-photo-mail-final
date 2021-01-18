@@ -8,7 +8,11 @@ const routes: Routes = [
   },
   {
     path: 'details/:id',
-    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
+    loadChildren: () => import('./details/details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'details-mail/:id',
+    loadChildren: () => import('./details/details-mail/details-mail.module').then( m => m.DetailsMailPageModule)
   }
 ];
 @NgModule({
